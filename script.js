@@ -5,6 +5,27 @@ canvas.addEventListener('touchmove', function(event) {
   // Use touch.clientX and touch.clientY to get the touch coordinates
 });
 
+document.addEventListener('DOMContentLoaded', (event) => {
+  var canvas = document.getElementById('stars');
+
+  canvas.addEventListener('touchstart', function(event) {
+    event.preventDefault();
+    // التعامل مع الأحداث عند بداية التاتش
+  });
+
+  canvas.addEventListener('touchmove', function(event) {
+    event.preventDefault();
+    var touch = event.touches[0];
+    // استخدم touch.clientX و touch.clientY للحصول على إحداثيات النقطة
+  });
+
+  canvas.addEventListener('touchend', function(event) {
+    event.preventDefault();
+    // التعامل مع الأحداث عند نهاية التاتش
+  });
+});
+
+
 const canvas = document.getElementById('stars');
 const ctx = canvas.getContext('2d');
 
