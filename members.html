@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galaxy of NAGASA - ≈œ«—… «·√⁄÷«¡</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="galaxy">
+    <canvas id="stars"></canvas>
+    <div class="members-container">
+      <h1>≈œ«—… «·√⁄÷«¡ - Galaxy of NAGASA</h1>
+      
+      <!-- ≈÷«›… ⁄÷Ê ÃœÌœ -->
+      <div class="add-member">
+        <h2>≈÷«›… ⁄÷Ê ÃœÌœ</h2>
+        <form id="addMemberForm">
+          <input type="text" id="memberName" placeholder="«”„ «·⁄÷Ê" required />
+          <select id="memberRole" required>
+            <option value="">«Œ — «·œÊ—</option>
+            <option value="„œ—»">„œ—»</option>
+            <option value="·«⁄»">·«⁄»</option>
+            <option value="≈œ«—Ì">≈œ«—Ì</option>
+          </select>
+          <select id="memberStatus" required>
+            <option value="">«Œ — «·Õ«·…</option>
+            <option value="‰‘ÿ">‰‘ÿ</option>
+            <option value="€Ì— ‰‘ÿ">€Ì— ‰‘ÿ</option>
+          </select>
+          <button type="submit">≈÷«›… ⁄÷Ê</button>
+        </form>
+      </div>
+
+      <!-- ﬁ«∆„… «·√⁄÷«¡ -->
+      <div class="member-list-container">
+        <h2>ﬁ«∆„… «·√⁄÷«¡</h2>
+        <table class="member-table">
+          <thead>
+            <tr>
+              <th>«·«”„</th>
+              <th>«·œÊ—</th>
+              <th>«·Õ«·…</th>
+              <th>≈Ã—«¡« </th>
+            </tr>
+          </thead>
+          <tbody id="memberList">
+            <!-- «·√⁄÷«¡ ”ÌŸÂ—Ê‰ Â‰« -->
+            <tr>
+              <td>√Õ„œ ⁄»œ «··Â</td>
+              <td>„œ—»</td>
+              <td>‰‘ÿ</td>
+              <td><a href="#" class="action-link"> ⁄œÌ·</a> | <a href="#" class="action-link">Õ–›</a></td>
+            </tr>
+            <tr>
+              <td>”«—… „Õ„œ</td>
+              <td>·«⁄»</td>
+              <td>€Ì— ‰‘ÿ</td>
+              <td><a href="#" class="action-link"> ⁄œÌ·</a> | <a href="#" class="action-link">Õ–›</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
