@@ -5,6 +5,10 @@ body {
   background: radial-gradient(circle, #0f0f3e, #010118);
 }
 
+body, html {
+  touch-action: manipulation; /* This tells the browser how to handle touch events */
+}
+
 #galaxy {
   position: relative;
   height: 100vh;
@@ -318,7 +322,7 @@ button:active {
   font-size: 14px;
 }
 
-/* ≈÷«›…  ‰”Ìﬁ«  ÃœÌœ… ··√⁄÷«¡ */
+/* √Ö√ñ√á√ù√â √ä√§√ì√≠√û√á√ä √å√è√≠√è√â √°√°√É√ö√ñ√á√Å */
 .section-container {
   display: flex;
   justify-content: space-around;
@@ -379,7 +383,7 @@ button:active {
   background-color: #00bebe;
 }
 
-/* ≈÷«›…  ‰”Ìﬁ«  ÃœÌœ… ··√·⁄«» */
+/* √Ö√ñ√á√ù√â √ä√§√ì√≠√û√á√ä √å√è√≠√è√â √°√°√É√°√ö√á√à */
 .games-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -425,7 +429,7 @@ button:active {
   background-color: #008c8c;
 }
 
-/*  ‰”Ìﬁ ⁄«„ ·Ã„Ì⁄ «·’›Õ«  */
+/* √ä√§√ì√≠√û √ö√á√£ √°√å√£√≠√ö √á√°√ï√ù√ç√á√ä */
 body {
   font-family: 'Orbitron', sans-serif;
   margin: 0;
@@ -447,7 +451,7 @@ canvas {
   height: 100%;
 }
 
-/*  ‰”Ìﬁ «·⁄‰Ê«‰ «·—∆Ì”Ì */
+/* √ä√§√ì√≠√û √á√°√ö√§√¶√á√§ √á√°√ë√Ü√≠√ì√≠ */
 .header-container {
   position: relative;
   z-index: 10;
@@ -462,7 +466,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-/*  ‰”Ìﬁ ‘—Ìÿ «· ‰ﬁ· */
+/* √ä√§√ì√≠√û √î√ë√≠√ò √á√°√ä√§√û√° */
 .navigation {
   display: flex;
   justify-content: center;
@@ -484,7 +488,7 @@ h1 {
   color: #010118;
 }
 
-/*  ‰”Ìﬁ «·Œ·›Ì… «·„ Õ—ﬂ… */
+/* √ä√§√ì√≠√û √á√°√é√°√ù√≠√â √á√°√£√ä√ç√ë√ü√â */
 @keyframes starMovement {
   from {
     transform: translateX(0) translateY(0);
