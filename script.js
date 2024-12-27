@@ -1,3 +1,10 @@
+var canvas = document.getElementById('stars');
+canvas.addEventListener('touchmove', function(event) {
+  event.preventDefault();
+  var touch = event.touches[0];
+  // Use touch.clientX and touch.clientY to get the touch coordinates
+});
+
 const canvas = document.getElementById('stars');
 const ctx = canvas.getContext('2d');
 
@@ -71,18 +78,18 @@ window.addEventListener('resize', () => {
 
 window.addEventListener('mousemove', handleMouseMove);
 
-//  Õﬁﬁ „‰ ’Õ… «·»Ì«‰«  «·„œŒ·…
+// √ä√ç√û√û √£√§ √ï√ç√â √á√°√à√≠√á√§√á√ä √á√°√£√è√é√°√â
 document.getElementById('loginForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // „‰⁄ ≈—”«· «·‰„Ê–Ã
+  event.preventDefault(); // √£√§√ö √Ö√ë√ì√á√° √á√°√§√£√¶√ê√å
 
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
   if (!username || !password) {
-    alert('Ì—ÃÏ ≈œŒ«· «”„ «·„” Œœ„ Êﬂ·„… «·„—Ê—');
+    alert('√≠√ë√å√¨ √Ö√è√é√á√° √á√ì√£ √á√°√£√ì√ä√é√è√£ √¶√ü√°√£√â √á√°√£√ë√¶√ë');
     return;
   }
 
-  // ≈—”«· «·„” Œœ„ ≈·Ï ·ÊÕ… «· Õﬂ„ »⁄œ «· Õﬁﬁ
+  // √Ö√ë√ì√á√° √á√°√£√ì√ä√é√è√£ √Ö√°√¨ √°√¶√ç√â √á√°√ä√ç√ü√£ √à√ö√è √á√°√ä√ç√û√û
   window.location.href = "dashboard.html";
 });
