@@ -9,6 +9,11 @@ body, html {
   touch-action: manipulation; /* This tells the browser how to handle touch events */
 }
 
+
+body, html {
+  touch-action: manipulation; /* يسمح للمتصفح بالتحكم في أحداث التاتش */
+}
+
 #galaxy {
   position: relative;
   height: 100vh;
